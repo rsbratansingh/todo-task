@@ -1,0 +1,136 @@
+body {
+    display: flex;
+    min-height: 100vh;
+    color: white;
+    background-color: rgb(184, 182, 182) !important;
+    font-size: 1.25rem;
+    flex-direction: column;
+}
+/* .container{display: none;} */
+
+header,
+main {
+    padding: 2rem 1rem;
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+h1 {
+    padding-bottom: 1rem;
+}
+
+input {
+    flex: 1 1 0%;
+    border-radius: 16px;
+    background-image: linear-gradient(to right, rgb(88, 85, 85), #3b3a3a);
+    /* background-color:#4a4c50 ; */
+    padding: 1rem;
+    font-size: 20px !important;
+    color: white;
+    /* width: */
+}
+
+button {
+    border-radius: 50px !important;
+    width: 150px;
+    border: 0px;
+    margin: 0px 1px !important;
+    background-image: radial-gradient(white, silver, gray);
+    color: hsl(233, 83%, 57%);
+    background-color: transparent;
+    font-weight: 700;
+    font-size: 20px !important;
+    cursor: pointer !important;
+}
+
+/* button:hover {
+    border: 2px solid rgb(201, 200, 200);
+} */
+
+.deleteAndTask {
+    justify-content: space-between;
+}
+
+.deleteAndTask h2 {
+    color: #615f5f;
+}
+
+#new-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.del,
+#clr {
+    color: #f5133b;
+}
+
+.newItem {
+    flex: 1 1 0%;
+}
+
+.formcls {
+    margin: 1rem 0 1rem 0;
+    display: flex;
+}
+
+.center {
+    align-items: center;
+    justify-content: center;
+}
+
+.center label {
+    color: #f5133b;
+    font-size: 1.8rem;
+}
+#login{
+    align-items: center;
+    justify-content: center;
+    padding:1rem;}
+@media screen and (max-width:800px) {
+    .formcls {
+        margin: 0.7rem;
+        display: block;
+    }
+
+    .newItem {
+        margin-bottom: 0.5rem;
+        width: 85% !important;
+    }
+
+    #task {
+        width: 80vw !important;
+        margin-bottom: 0.5rem;
+    }
+
+    .deleteAndTask h2 {
+        margin: 0 0 1rem 0;
+        /* display: inline-flex; */
+        /* width:60vw; */
+    }
+
+    .deleteAndTask {
+        width: 90vw !important;
+        display: inline-flex;
+    }
+
+    #add{
+        padding: 1rem !important;
+    }
+
+    /* .header{;} */
+    /* .formcls button { */
+    /* justify-content: space-between !important; */
+    /* display: contents; */
+    /* } */
+    #task {
+        width: 60%;
+    }
+
+    .del,
+    .edit {
+        padding: 0.5rem !important;
+        /* margin:0 10px 0 10px !important; */
+    }
+}
